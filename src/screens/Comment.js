@@ -39,9 +39,9 @@ class Comment extends Component {
             <Text style={styles.time}>
               {moment(post.time).format('D MMM YYYY')}
             </Text>
-            <Text style={styles.title}>{post.title}</Text>
+            <Text style={styles.header}>{'О чем пост'}</Text>
             <Text style={styles.body}>{post.body}</Text>
-            <Text style={styles.commentHeader}>{'Комментарии:'}</Text>
+            <Text style={styles.header}>{'Комментарии:'}</Text>
             <Loader show={loading} />
           </>
         )}
@@ -75,8 +75,9 @@ const styles = StyleSheet.create({
   body: {
     fontSize: 12,
   },
-  commentHeader: {
-    marginVertical: 7,
+  header: {
+    marginTop: 7,
+    marginBottom: 3,
     fontSize: 17,
   },
 });
