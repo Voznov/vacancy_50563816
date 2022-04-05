@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import {FlatList, Text, StyleSheet, View} from 'react-native';
+import {FlatList, StyleSheet, View} from 'react-native';
 import {connect} from 'react-redux';
 import moment from 'moment';
 
 import {getPosts, deletePost} from '../store/actions/posts';
-import {Loader, Separator, Touchable} from '../components/default';
+import {Loader, Separator, Text, Touchable} from '../components/default';
 import {Block} from '../components';
 import {COLORS} from '../constants/style';
 

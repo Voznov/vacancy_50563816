@@ -1,9 +1,9 @@
+import Posts from './Posts';
 import Comment from './Comment';
-import Home from './Home';
 
 export const SCREEN_DATA = {
-  Home: {
-    component: Home,
+  Posts: {
+    component: Posts,
   },
   Comment: {
     component: Comment,

@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import {StyleSheet, FlatList, Text} from 'react-native';
+import {StyleSheet, FlatList} from 'react-native';
 import {connect} from 'react-redux';
 import moment from 'moment';
 
 import {Block} from '../components';
-import {Loader, Separator} from '../components/default';
+import {Loader, Separator, Text} from '../components/default';
 import {getComments} from '../store/actions/comments';
 
 class Comment extends Component {
