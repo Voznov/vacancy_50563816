@@ -1,6 +1,6 @@
 import {FAILED, FINISH, START} from '../store/constants';
 
-const url = 'http://jsonplaceholder.typicode.com';
+const url = 'https://jsonplaceholder.typicode.com';
 
 const fetchData = async ({path, method = 'GET', params}) => {
   const paramString = params

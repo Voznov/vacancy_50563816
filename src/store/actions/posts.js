@@ -1,4 +1,4 @@
-import {fetchDataActionFactory} from '../../util/posts';
+import {fetchDataActionFactory} from '../../util/fetchData';
 import {DELETE_POST, GET_POSTS} from '../constants';
 
 const fetchPosts = fetchDataActionFactory(GET_POSTS, {path: '/posts'});
